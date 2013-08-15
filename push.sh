@@ -2,10 +2,20 @@
 
 datetime=`date "+%Y-%m-%d %H:%M:%S"`
 
+#$1 = Argument passed that is the site to be pushed
+#$2 = Argument passed that is the respective branch name
+
 # Push www.blogto.com to DEV
 if [ "$1" = "www.dev" ]
 then
-	#Enter rsync commands to git pull, copy from the git folder to the dev site folder 
+	#Enter rsync commands and git pull, copy from the git folder to the dev site folder 
+	#Example :
+        #cd /data/git-repository/webapp
+        #echo "Pulling from branch: $2"
+        #sudo -u gituser git fetch --all
+        #sudo -u gituser git checkout $2
+        #sudo -u gituser git pull origin $2
+
 
 
 # Push www.blogto.com to PRODUCTION
