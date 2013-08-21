@@ -18,7 +18,7 @@ then
 
 
 
-# Push www.blogto.com to PRODUCTION
+# Push to PRODUCTION
 elif [ "$1" = "www.prod" ]
 then
 	#Enter rsync commants to copy from the dev site folder to the production site folder
